@@ -1,4 +1,4 @@
-// JavaScript to handle theme change
+// Handle theme change
 const themeDropdown = document.getElementById('bd-theme-dropdown');
 const themeButtons = document.querySelectorAll('[data-bs-theme-value]');
 
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-//Like Button Blinks
+// Like Button Blinks
 const likeButtons = document.querySelectorAll('.like-button');
 
 likeButtons.forEach(button => {
@@ -34,7 +34,7 @@ likeButtons.forEach(button => {
     // Append thank you message to the parent element of the button
     button.parentNode.appendChild(message);
     
-    // Remove blink class and thank you message immediately
+    // Remove blink class and thank you message after 1 second
     setTimeout(() => {
       icon.classList.remove('blink');
       button.parentNode.removeChild(message);
@@ -49,9 +49,7 @@ viewButtons.forEach(button => {
   button.addEventListener('click', function() {
     const url = this.getAttribute('data-url');
     if (url) {
-      window.location.href = url;
+      window.open(url, '_blank');
     }
   });
 });
-
-
