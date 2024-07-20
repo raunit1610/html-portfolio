@@ -42,6 +42,16 @@ likeButtons.forEach(button => {
   });
 });
 
+// Redirect to link on view button click
+const viewButtons = document.querySelectorAll('.view');
 
+viewButtons.forEach(button => {
+  button.addEventListener('click', function() {
+    const url = this.getAttribute('data-url');
+    if (url) {
+      window.location.href = url;
+    }
+  });
+});
 
 
