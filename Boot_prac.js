@@ -56,7 +56,7 @@ viewButtons.forEach(button => {
 
 const containerEl = document.querySelector(".conte");
 
-const careers = ["Web Developer", "Freelancer", "UI UX Designer", "Data Analyst"];
+const careers = ["Frontend Developer", "UI UX Designer", "Web Developer", "Data Analyst"];
 
 let careerIndex = 0;
 
