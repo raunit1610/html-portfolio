@@ -1,0 +1,66 @@
+.cont_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.fw-light,
+.ex_1 {
+  color: rgb(21, 16, 18);
+  font-family: "Big Shoulders Inline Text", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 30px;
+  font-style: normal;
+  font-size: 4rem;
+}
+
+.ex_1 {
+  color: rgb(79, 75, 75);
+  font-size: 20px;
+}
+.ex_2 {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.ex_4 > p {
+  display: flex;
+  justify-content: center;
+}
+
+.prof_1 {
+  color: whitesmoke;
+  font-family: "Big Shoulders Inline Text", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 30px;
+  font-style: normal;
+}
+
+[data-bs-theme="dark"] {
+  .fw-light,
+  .ex_1 {
+    color: whitesmoke;
+    font-family: "Big Shoulders Inline Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 30px;
+    font-style: normal;
+    font-size: 4rem;
+  }
+}
+.btn {
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.blink {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
