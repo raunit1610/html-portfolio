@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raunit's Contact Page</title>
+    <link rel="stylesheet" href="../Styles/Utility.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo">Raunit <span>Raj</span></a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="./about.html" class="diff" target="_blank">Home</a>
+            <a href="../../index.html" class="diff" target="_blank">My Portfolio</a>
+            <a href="#contact" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form id="contact-form">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name" id="full-name" required>
+                    <input type="email" placeholder="Email" id="email" required>
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Phone Number" id="phone-number" required>
+                    <input type="text" placeholder="Subject" id="subject" required>
+                </div>
+            </div>
+            <div class="input-group-2">
+                <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </div>
+        </form>
+
+    </section>
+
+    <footer class="footer">
+        <div class="social">
+                <a href="https://www.linkedin.com/in/raunit-raj-12238b2b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/raunit1610"><i class='bx bxl-github' ></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+        <p class="copyright">
+            © Raunit Raj | All Rights Reserved
+        </p>
+    </footer>
+    <script src="../Scripts/Utility.js"></script>
+</body>
+</html>
